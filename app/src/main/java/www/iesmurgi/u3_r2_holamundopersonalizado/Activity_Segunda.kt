@@ -9,10 +9,11 @@ import android.widget.TextView
 class Activity_Segunda : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mostrarNombre()
+        setContentView(R.layout.activity_segunda)
         val bottonVolver: Button =findViewById(R.id.btFinalizar)
         bottonVolver.setOnClickListener{onBackPressed()}
-        //setContentView(R.layout.activity_segunda)
+        mostrarNombre()
+
     }
 
     private fun mostrarNombre() {
