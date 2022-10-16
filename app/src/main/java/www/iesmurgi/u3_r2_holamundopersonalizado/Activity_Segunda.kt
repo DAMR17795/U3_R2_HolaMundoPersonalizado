@@ -9,6 +9,7 @@ import android.widget.TextView
 class Activity_Segunda : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //importante
         setContentView(R.layout.activity_segunda)
         val bottonVolver: Button =findViewById(R.id.btFinalizar)
         bottonVolver.setOnClickListener{onBackPressed()}

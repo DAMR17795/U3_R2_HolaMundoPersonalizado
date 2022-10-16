@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val btSiguiente: Button = findViewById(R.id.btSiguiente)
         btSiguiente.setOnClickListener{chequear()}
     }
-
+    //no funciona
     private fun mostrarErrorNbre() {
         TODO("Not yet implemented")
         Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
