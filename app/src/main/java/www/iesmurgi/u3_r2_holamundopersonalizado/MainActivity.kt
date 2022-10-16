@@ -20,7 +20,6 @@ class MainActivity : AppCompatActivity() {
         //Comprobar si el usuario  ha escrito su nombre
         val etNombre:EditText
         etNombre = findViewById<EditText>(R.id.etNombre)
-
         if(etNombre.text.isNotEmpty()) {
             //iremos a la nueva actividad
             val enviar= Intent(this, Activity_Segunda::class.java)

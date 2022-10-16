@@ -13,13 +13,11 @@ class Activity_Segunda : AppCompatActivity() {
         val bottonVolver: Button =findViewById(R.id.btFinalizar)
         bottonVolver.setOnClickListener{onBackPressed()}
         mostrarNombre()
-
     }
-
     private fun mostrarNombre() {
         val mibundle=intent.extras
         val nombre = mibundle?.getString("SALUDO")
         val tvSaludoPer=findViewById<TextView>(R.id.tvSaludoPer)
-        tvSaludoPer.text=nombre
+        tvSaludoPer.text="Bienvenido " + nombre
     }
 }
