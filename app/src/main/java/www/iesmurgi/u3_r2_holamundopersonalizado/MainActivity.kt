@@ -16,6 +16,11 @@ class MainActivity : AppCompatActivity() {
         btSiguiente.setOnClickListener{chequear()}
     }
 
+    private fun mostrarErrorNbre() {
+        TODO("Not yet implemented")
+        Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
+    }
+
     fun chequear() {
         //Comprobar si el usuario  ha escrito su nombre
         val etNombre:EditText
@@ -27,12 +32,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(enviar)
         } else {
             //Mostramos un mensaje de que no tenemos nombre
-            mostrarErrorNbre()
+            //mostrarErrorNbre()
+            Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
         }
-    }
-
-    private fun mostrarErrorNbre() {
-        TODO("Not yet implemented")
-        Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
     }
 }
