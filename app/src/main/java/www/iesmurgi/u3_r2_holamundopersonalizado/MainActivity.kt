@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         val btSiguiente: Button = findViewById(R.id.btSiguiente)
         btSiguiente.setOnClickListener{chequear()}
     }
-    //no funciona
     private fun mostrarErrorNbre() {
         Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
     }
@@ -32,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             //Mostramos un mensaje de que no tenemos nombre
             mostrarErrorNbre()
-            //Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
         }
     }
 }
