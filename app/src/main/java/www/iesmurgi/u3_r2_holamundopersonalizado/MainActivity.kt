@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
     }
     //no funciona
     private fun mostrarErrorNbre() {
-        TODO("Not yet implemented")
         Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
     }
 
@@ -32,8 +31,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(enviar)
         } else {
             //Mostramos un mensaje de que no tenemos nombre
-            //mostrarErrorNbre()
-            Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
+            mostrarErrorNbre()
+            //Toast.makeText(this, "El nombre del usuario no puede estar vacio", Toast.LENGTH_SHORT).show()
         }
     }
 }
