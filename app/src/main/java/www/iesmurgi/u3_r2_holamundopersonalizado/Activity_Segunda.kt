@@ -17,7 +17,7 @@ class Activity_Segunda : AppCompatActivity() {
     }
     private fun mostrarNombre() {
         val mibundle=intent.extras
-        val nombre = mibundle?.getString("SALUDO")
+        val nombre = mibundle?.getString("SALUDOS")
         val tvSaludoPer=findViewById<TextView>(R.id.tvSaludoPer)
         tvSaludoPer.text="Bienvenido " + nombre
     }

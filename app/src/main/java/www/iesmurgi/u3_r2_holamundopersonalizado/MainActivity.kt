@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         if(etNombre.text.isNotEmpty()) {
             //iremos a la nueva actividad
             val enviar= Intent(this, Activity_Segunda::class.java)
-            enviar.putExtra("SALUDO", etNombre.text.toString())
+            enviar.putExtra("SALUDOS", etNombre.text.toString())
             startActivity(enviar)
         } else {
             //Mostramos un mensaje de que no tenemos nombre
